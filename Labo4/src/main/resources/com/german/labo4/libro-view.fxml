@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_LEFT" prefHeight="152.0" prefWidth="207.0" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.german.labo4.LibroController">
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <!-- Barra superior con botón -->
+    <HBox alignment="CENTER_LEFT" spacing="10">
+        <Button fx:id="addButton" onAction="#onAgregarLibro" text="Agregar Libro" />
+    </HBox>
+
+    <!-- Espacio extra antes de las cards -->
+    <VBox minHeight="10" />
+
+    <!-- Contenedor de las cards -->
+    <TilePane fx:id="cardsPane" hgap="20" prefColumns="3" tileAlignment="TOP_LEFT" vgap="20" VBox.vgrow="ALWAYS" />
+</VBox>
