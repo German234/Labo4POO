@@ -5,13 +5,15 @@ public class Libro implements IReferenciable {
     private String titulo;
     private String autor;
     private String editorial;
+    private String imageURL;
 
     public Libro() {}
 
-    public Libro(String titulo, String autor, String editorial) {
+    public Libro(String titulo, String autor, String editorial, String imageURL) {
         this.titulo = titulo;
         this.autor = autor;
         this.editorial = editorial;
+        this.imageURL = imageURL;
     }
 
     public String getTitulo() {
@@ -36,6 +38,13 @@ public class Libro implements IReferenciable {
 
     public void setEditorial(String editorial) {
         this.editorial = editorial;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
+    public String getImageURL() {
+        return imageURL;
     }
 
     @Override
